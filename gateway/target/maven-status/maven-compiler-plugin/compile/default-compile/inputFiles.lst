@@ -1,0 +1,6 @@
+D:\OtherIdeaProjects\ykkj-iot-demo\gateway\src\main\java\com\ykkj\config\HttpMsgConverConfig.java
+D:\OtherIdeaProjects\ykkj-iot-demo\gateway\src\main\java\com\ykkj\config\GlobalCorsConfig.java
+D:\OtherIdeaProjects\ykkj-iot-demo\gateway\src\main\java\com\ykkj\filter\GlobalTokenFilter.java
+D:\OtherIdeaProjects\ykkj-iot-demo\gateway\src\main\java\com\ykkj\GatewayApplication.java
+D:\OtherIdeaProjects\ykkj-iot-demo\gateway\src\main\java\com\ykkj\services\RemoteService.java
+D:\OtherIdeaProjects\ykkj-iot-demo\gateway\src\main\java\com\ykkj\interceptor\FeignRequestInterceptor.java

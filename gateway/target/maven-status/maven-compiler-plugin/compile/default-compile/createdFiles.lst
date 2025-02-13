@@ -1,0 +1,6 @@
+com\ykkj\services\RemoteService.class
+com\ykkj\filter\GlobalTokenFilter.class
+com\ykkj\GatewayApplication.class
+com\ykkj\interceptor\FeignRequestInterceptor.class
+com\ykkj\config\HttpMsgConverConfig.class
+com\ykkj\config\GlobalCorsConfig.class

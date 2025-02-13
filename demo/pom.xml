@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ykkj-iot-demo</artifactId>
+        <groupId>com.ykkj</groupId>
+        <version>1.0-RELEASES</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>demo</artifactId>
+
+    <dependencies>
+
+        <!-- spring-file-storage 必须要引入
+        <dependency>
+            <groupId>cn.xuyanwu</groupId>
+            <artifactId>spring-file-storage</artifactId>
+            <version>0.5.0</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>com.huaweicloud</groupId>
+            <artifactId>esdk-obs-java</artifactId>
+            <version>3.23.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.15</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.flowable</groupId>
+            <artifactId>flowable-spring-boot-starter</artifactId>
+            <version>6.6.0</version>
+        </dependency>
+        <!-- flowable 6.6-->
+      <dependency>
+            <groupId>org.flowable</groupId>
+            <artifactId>flowable-spring-boot-starter-ui-idm</artifactId>
+            <version>${flowable.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.flowable</groupId>
+            <artifactId>flowable-spring-boot-starter-ui-modeler</artifactId>
+            <version>${flowable.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>transmittable-thread-local</artifactId>
+            <version>2.14.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- flowable 集成依赖 rest，logic，conf -->
+       <dependency>
+           <groupId>org.flowable</groupId>
+           <artifactId>flowable-json-converter</artifactId>
+           <version>${flowable.version}</version>
+       </dependency>
+
+       <dependency>
+           <groupId>org.flowable</groupId>
+           <artifactId>flowable-ui-modeler-rest</artifactId>
+           <version>${flowable.version}</version>
+       </dependency>
+       <dependency>
+           <groupId>org.flowable</groupId>
+           <artifactId>flowable-ui-modeler-logic</artifactId>
+           <version>${flowable.version}</version>
+           <exclusions>
+               <exclusion>
+                   <groupId>org.apache.logging.log4j</groupId>
+                   <artifactId>log4j-slf4j-impl</artifactId>
+               </exclusion>
+           </exclusions>
+       </dependency>
+       <dependency>
+           <groupId>org.flowable</groupId>
+           <artifactId>flowable-ui-modeler-conf</artifactId>
+           <version>${flowable.version}</version>
+       </dependency>
+
+        <!-- License -->
+        <dependency>
+            <groupId>de.schlichtherle.truelicense</groupId>
+            <artifactId>truelicense-core</artifactId>
+            <version>1.33</version>
+        </dependency>
+
+    </dependencies>
+</project>

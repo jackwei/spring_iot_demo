@@ -1,0 +1,39 @@
+flowable:
+  rest:
+    app:
+      authentication-mode: no-privilege
+      #  idm:
+      admin:
+        password: test
+        user-id: admin
+        first-name: admin
+        last-name: admin
+  #关闭定时任务JOB
+  # 关闭异步，不关闭历史数据的插入就是异步的，会在同一个事物里面，无法回滚
+  # 开发可开启会提高些效率，上线需要关闭
+  async-executor-activate: false
+  database-schema-update: true # 设置为 false，可通过 https://github.com/flowable/flowable-sql 初始化
+  db-history-used: true # flowable6 默认 true 生成信息表，无需手动设置
+  check-process-definitions: false # 设置为 false，禁用 /resources/processes 自动部署 BPMN XML 流程
+  history-level: full # full：保存历史数据的最高级别，可保存全部流程相关细节，包括流程流转各节点参数
+    
+    
+    <dependency>
+    <groupId>org.flowable</groupId>
+    <artifactId>flowable-spring-boot-starter</artifactId>
+    <version>${flowable.version}</version>
+    <!--<version>6.5.0</version>  78 -->
+    <!--<version>6.3.0</version> 60-->
+    <!--<version>6.6.0</version> 84-->
+    </dependency>
+    <!-- flowable 6.6-->
+    <dependency>
+    <groupId>org.flowable</groupId>
+    <artifactId>flowable-spring-boot-starter-ui-idm</artifactId>
+    <version>${flowable.version}</version>
+    </dependency>
+    <dependency>
+    <groupId>org.flowable</groupId>
+    <artifactId>flowable-spring-boot-starter-ui-modeler</artifactId>
+    <version>${flowable.version}</version>
+    </dependency>
