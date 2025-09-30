@@ -5,7 +5,7 @@
     <parent>
         <artifactId>ykkj-iot-demo</artifactId>
         <groupId>com.ykkj</groupId>
-        <version>1.0-RELEASES</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -30,20 +30,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.5.15</version>
-        </dependency>
 
-
+<!--
         <dependency>
             <groupId>org.flowable</groupId>
             <artifactId>flowable-spring-boot-starter</artifactId>
-            <version>6.6.0</version>
-        </dependency>
+            <version>${flowable.version}</version>
+            &lt;!&ndash;<version>6.5.0</version>  78 &ndash;&gt;
+            &lt;!&ndash;<version>6.3.0</version> 60&ndash;&gt;
+            &lt;!&ndash;<version>6.6.0</version> 84&ndash;&gt;
+        </dependency>-->
         <!-- flowable 6.6-->
-      <dependency>
+       <!-- <dependency>
             <groupId>org.flowable</groupId>
             <artifactId>flowable-spring-boot-starter-ui-idm</artifactId>
             <version>${flowable.version}</version>
@@ -52,14 +50,14 @@
             <groupId>org.flowable</groupId>
             <artifactId>flowable-spring-boot-starter-ui-modeler</artifactId>
             <version>${flowable.version}</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>transmittable-thread-local</artifactId>
             <version>2.14.2</version>
             <scope>test</scope>
         </dependency>
-        <!-- flowable 集成依赖 rest，logic，conf -->
+        <!-- flowable 集成依赖 rest，logic，conf
        <dependency>
            <groupId>org.flowable</groupId>
            <artifactId>flowable-json-converter</artifactId>
@@ -86,14 +84,6 @@
            <groupId>org.flowable</groupId>
            <artifactId>flowable-ui-modeler-conf</artifactId>
            <version>${flowable.version}</version>
-       </dependency>
-
-        <!-- License -->
-        <dependency>
-            <groupId>de.schlichtherle.truelicense</groupId>
-            <artifactId>truelicense-core</artifactId>
-            <version>1.33</version>
-        </dependency>
-
+       </dependency>-->
     </dependencies>
 </project>

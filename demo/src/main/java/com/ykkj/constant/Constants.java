@@ -10,8 +10,6 @@ package com.ykkj.constant;
 
 public class Constants {
 
-    public static final String TRACE_ID = "traceIdTest" ;
-
     /**
      * UTF-8 字符集
      */

@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  * @Description TODO
  * @createTime 2023年03月22日
  */
-//@Component
+@Component
 public class InitRunner implements CommandLineRunner {
 
 
