@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SdkLog>
+<logLevel>3</logLevel>
+<logDirectory>C:\SadpLog</logDirectory>
+<autoDelete>true</autoDelete>
+<cryptoPath>libcrypto-1_1-x64.dll</cryptoPath>
+<sslPath>libssl-1_1-x64.dll</sslPath>
+<pcap>true</pcap>
+</SdkLog>
