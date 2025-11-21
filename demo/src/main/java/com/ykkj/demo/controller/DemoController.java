@@ -9,7 +9,6 @@ import cn.hutool.json.JSONUtil;
 import com.ykkj.demo.lierda.PushDataUtils;
 import com.ykkj.demo.nplink.ByteUtil;
 import lombok.extern.slf4j.Slf4j;
-import org.flowable.engine.IdentityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,9 +29,6 @@ import java.io.InputStreamReader;
 //@RestController
 //@RequestMapping("/uwb")
 public class DemoController {
-
-    @Autowired
-    private IdentityService identityService;
 
     @GetMapping("/")
     public String sayHello(@RequestParam(required = false, name = "who") String who,HttpServletResponse response) throws IOException {
